@@ -145,3 +145,12 @@ bst.recurInOrder()
 bst.recurPostOrder()
 bst.depthFirstSearch()
 bst.breadthFirstSearch()
+
+"""
+python binary_search_tree.py 
+PRE : 50 , 30 , 10 , 20 , 40 , 90 , 70 , 60 , 80 , 100 ,  
+In : 10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100 ,  
+POST: 20 , 10 , 40 , 30 , 60 , 80 , 70 , 100 , 90 , 50 ,  
+DFS: 50, 30, 10, 20, 40, 90, 70, 60, 80, 100, 
+BFS: 50, 30, 90, 10, 40, 70, 100, 20, 60, 80,
+"""
