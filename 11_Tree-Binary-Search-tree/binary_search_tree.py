@@ -53,7 +53,7 @@ class BinSearchTree():
                         trav.left = newNode
                         break
                     trav = trav.left
-                else:
+                else: # else value more than trav, goto right
                     if trav.right == None:
                         trav.right = newNode
                         break
@@ -102,7 +102,6 @@ class BinSearchTree():
     def find(self, val):
         pass
 
-
     def depthFirstSearch(self):
         print("DFS: ", end="")
         s = Stack()
@@ -129,22 +128,23 @@ class BinSearchTree():
                 q.push(trav.right)
         print()
 
-bst = BinSearchTree()
-bst.add(50)
-bst.add(30)
-bst.add(90)
-bst.add(10)
-bst.add(40)
-bst.add(70)
-bst.add(100)
-bst.add(20)
-bst.add(60)
-bst.add(80)
-bst.recurPreOrder()
-bst.recurInOrder()
-bst.recurPostOrder()
-bst.depthFirstSearch()
-bst.breadthFirstSearch()
+if __name__=="__main__":
+    bst = BinSearchTree()
+    bst.add(50)
+    bst.add(30)
+    bst.add(90)
+    bst.add(10)
+    bst.add(40)
+    bst.add(70)
+    bst.add(100)
+    bst.add(20)
+    bst.add(60)
+    bst.add(80)
+    bst.recurPreOrder()
+    bst.recurInOrder()
+    bst.recurPostOrder()
+    bst.depthFirstSearch()
+    bst.breadthFirstSearch()
 
 """
 python binary_search_tree.py 
