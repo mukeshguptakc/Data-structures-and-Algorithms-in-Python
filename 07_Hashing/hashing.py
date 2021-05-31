@@ -52,3 +52,9 @@ if __name__=="__main__":
     key = 7401
     res = ht.get(key)
     print(str(key) + " ->" + str(res))
+
+"""
+python 07_Hashing/hashing.py
+6401 ->Director
+7401 ->Quality Assurance
+"""
