@@ -26,3 +26,12 @@ if __name__ == '__main__':
     print("Prior to Reverse: arr_count: {} arr: {}".format(arr_count, arr))
     res = reverseArray(arr)
     print("Post Reverse: arr_count: {} arr: {}".format(arr_count, arr))
+
+
+"""
+python 001_reverse_array.py
+6
+6 5 4 3 2 1
+Prior to Reverse: arr_count: 6 arr: [6, 5, 4, 3, 2, 1]
+Post Reverse: arr_count: 6 arr: [1, 2, 3, 4, 5, 6]
+"""
